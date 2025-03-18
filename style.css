@@ -87,10 +87,10 @@ ul li{
 ul li::before {
     content: "";
     position: absolute;
-    height: 12px; /* Adjust the size as needed */
+    height: 12px; 
     width: 12px;
     border-radius: 50%;
-    border: 2px solid var(--green); /* Makes a small outlined circle */
+    border: 2px solid var(--green); 
     top: 50%;
     left: 10px;
     transform: translateY(-50%);

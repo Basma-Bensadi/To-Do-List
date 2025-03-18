@@ -26,7 +26,7 @@ function add() {
     }
 }
 
-// Click event for marking tasks & deleting
+
 containerList.addEventListener("click", function (e) {
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
@@ -42,8 +42,6 @@ function SaveElement() {
 
 function getelement() {
     containerList.innerHTML = localStorage.getItem("data");
-    
-    // Re-add event listeners to all list items and spans
     document.querySelectorAll("#list-container li").forEach(li => {
         li.addEventListener("click", function () {
             li.classList.toggle("checked");
@@ -60,7 +58,7 @@ function getelement() {
     });
 }
 
-// Dark mode toggle
+
 let darkMode = document.getElementById("icon");
 darkMode.addEventListener("click", dark);
 
@@ -77,6 +75,5 @@ function savemode() {
     }
 }
 
-// Load saved data on page load
 getelement();
 savemode();
